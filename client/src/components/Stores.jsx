@@ -37,7 +37,7 @@ const Stores = () => {
                                 <td><Link to={`/stores/${store._id}`}>{store.Name}</Link></td>
                                 <td>{store.Num}</td>
                                 <td>{store.Open?"True":"False"}</td>
-                                {store.Open?<Link className='btn bg-danger' onClick={()=>removeRecord(store._id)}>Remove</Link>:""}
+                                <td>{store.Open?<Link className='btn bg-danger' onClick={()=>removeRecord(store._id)}>Remove</Link>:""}</td>
                             </tr>
                         )
                     }
