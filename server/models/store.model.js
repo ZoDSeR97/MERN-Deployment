@@ -3,12 +3,12 @@ const mongoose = require('mongoose');
 const StoreSchema = new mongoose.Schema({
     Name: {
         type: String,
-        require: true,
+        required: true,
         minlength: 3
     },
     Num: {
         type: Number,
-        require: true,
+        required: true,
         min: 1
     },
     Open: {

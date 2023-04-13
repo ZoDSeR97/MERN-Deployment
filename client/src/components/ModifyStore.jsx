@@ -38,9 +38,9 @@ const ModifyStore = () => {
             .then(response=> navigate(`/stores/${response.data._id}`))  
             .catch(err=>{
                 let temp = {}
-                if(err.response.data.error.errors.Name)
+                if(err.response.data.errors.Name)
                     temp.Name = "Name is less than 2 characters"
-                if (err.response.data.error.errors.Num)
+                if (err.response.data.errors.Num)
                     temp.Num = "Num cannot be 0"
                 setError(temp);
                 axios.get(`http://localhost:8000/api/stores/${id}`)
