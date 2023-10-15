@@ -6,3 +6,7 @@ Deploy A FULL Stack Application on Amazon
   - express dotenv cors mongoose cookie-parser
 - [client]
   - react-router-dom axios @material-ui/core
+
+## MERN-Activate
+- Run server with nodemon
+- Run client normally
